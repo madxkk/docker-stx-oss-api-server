@@ -110,6 +110,7 @@ RUN conda install -c rdkit -f -y -n base \
     wheel=0.31.1 \
     flask=1.1.1 \
     prompt_toolkit=1.0.15 \
-    ipython=6.5.0
+    ipython=6.5.0 \
+    simplejson=3.16.0
 
 WORKDIR /code
