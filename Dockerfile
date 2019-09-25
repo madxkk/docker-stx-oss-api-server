@@ -4,6 +4,7 @@
 # container tags can be your own, when you builded this container update container name in ../Dockerfile (you can just use latest tag if you want)
 FROM debian:latest
 LABEL maintainer="madxkk@xaked.com"
+LABEL tag="2019-19-08"
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
@@ -33,7 +34,7 @@ RUN time curl "https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
 # installing rdkit - Open source toolkit for cheminformatics
 # installing python dependencies
 RUN conda install -c rdkit -f -y -n base \
-    pip=19.2.3 \
+    pip=10.0.1 \
     pandas=0.23.3 \
     psycopg2=2.7.5 \
     flask-cors=3.0.6 \
@@ -108,12 +109,17 @@ RUN conda install -c rdkit -f -y -n base \
     rdkit-postgresql=2018.09.1.0 \
     wheel=0.31.1 \
     flask=1.1.1 \
+    prompt_toolkit=1.0.15 \
+    ipython=6.5.0
+
+RUN pip install --upgrade \
+    pip=19.2.3 \
     flask-restful=0.3.7 \
+    flask-jwt=0.3.2 \
     flask-jwt-extended=3.23.0 \
     flask-sqlalchemy=2.4.0 \
     passlib=1.7.1 \
-    prompt_toolkit=1.0.15 \
-    ipython=6.5.0 \
+    PyJWT = 1.7.1 \
     simplejson=3.16.0
 
 WORKDIR /code
