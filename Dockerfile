@@ -120,6 +120,7 @@ RUN pip install --upgrade \
     flask-sqlalchemy==2.4.0 \
     passlib==1.7.1 \
     PyJWT==1.7.1 \
-    simplejson==3.16.0
+    simplejson==3.16.0 \
+    Flask-Mail==0.9.1
 
 WORKDIR /code
