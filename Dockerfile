@@ -113,13 +113,13 @@ RUN conda install -c rdkit -f -y -n base \
     ipython=6.5.0
 
 RUN pip install --upgrade \
-    pip=19.2.3 \
-    flask-restful=0.3.7 \
-    flask-jwt=0.3.2 \
-    flask-jwt-extended=3.23.0 \
-    flask-sqlalchemy=2.4.0 \
-    passlib=1.7.1 \
-    PyJWT = 1.7.1 \
-    simplejson=3.16.0
+    pip==19.2.3 \
+    flask-restful==0.3.7 \
+    flask-jwt==0.3.2 \
+    flask-jwt-extended==3.23.0 \
+    flask-sqlalchemy==2.4.0 \
+    passlib==1.7.1 \
+    PyJWT==1.7.1 \
+    simplejson==3.16.0
 
 WORKDIR /code
