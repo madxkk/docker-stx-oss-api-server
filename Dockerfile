@@ -4,7 +4,6 @@
 # container tags can be your own, when you builded this container update container name in ../Dockerfile (you can just use latest tag if you want)
 FROM debian:latest
 LABEL maintainer="madxkk@xaked.com"
-LABEL tag="2019-19-08"
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /opt/conda/bin:$PATH
@@ -113,7 +112,7 @@ RUN conda install -c rdkit -f -y -n base \
     ipython=6.5.0
 
 RUN pip install --upgrade \
-    pip==19.2.3 \
+    pip==19.3 \
     flask-restful==0.3.7 \
     flask-jwt==0.3.2 \
     flask-jwt-extended==3.23.0 \
@@ -121,6 +120,7 @@ RUN pip install --upgrade \
     passlib==1.7.1 \
     PyJWT==1.7.1 \
     simplejson==3.16.0 \
-    Flask-Mail==0.9.1
+    Flask-Mail==0.9.1 \
+    scipy==1.3.1
 
 WORKDIR /code
