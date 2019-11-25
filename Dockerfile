@@ -122,6 +122,7 @@ RUN pip install --upgrade \
     simplejson==3.16.0 \
     Flask-Mail==0.9.1 \
     scipy==1.3.1 \
-    xlrd==1.2.0
+    xlrd==1.2.0 \
+    requests==2.22.0
 
 WORKDIR /code
