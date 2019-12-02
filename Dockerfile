@@ -32,7 +32,7 @@ RUN time curl "https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
 
 # installing rdkit - Open source toolkit for cheminformatics
 # installing python dependencies
-RUN conda install -c rdkit -f -y -n base \
+RUN conda install -c rdkit -c conda-forge -f -y -n base \
   pip=10.0.1 \
   pandas=0.23.3 \
   psycopg2=2.7.5 \
