@@ -15,7 +15,7 @@ RUN apt-get update --fix-missing && \
   libglib2.0-0 libxext6 libsm6 libxrender1 \
   software-properties-common libsqlite3-dev autoconf \
   dirmngr apt-transport-https build-essential \
-  libfontconfig1 libxrender1 libpq-dev python3-dev time && \
+  libfontconfig1 libxrender1 libpq-dev python3-dev time nginx && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
@@ -109,7 +109,8 @@ RUN conda install -c rdkit -f -y -n base \
   wheel=0.31.1 \
   flask=1.1.1 \
   prompt_toolkit=1.0.15 \
-  ipython=6.5.0
+  ipython=6.5.0 \
+  uwsgi=2.0.15
 
 RUN pip install --upgrade \
   pip==19.3.1 \
