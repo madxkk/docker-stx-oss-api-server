@@ -14,7 +14,7 @@ RUN apt-get update --fix-missing && \
   wget bzip2 ca-certificates git curl grep sed dpkg \
   libglib2.0-0 libxext6 libsm6 libxrender1 \
   software-properties-common libsqlite3-dev autoconf \
-  dirmngr apt-transport-https build-essential \
+  dirmngr apt-transport-https build-essential cron \
   libfontconfig1 libxrender1 libpq-dev python3-dev time nginx && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
