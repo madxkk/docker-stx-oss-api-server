@@ -83,8 +83,8 @@ RUN conda install -c rdkit -c conda-forge -f -y -n base \
   itsdangerous=0.24 \
   libpq=10.3 \
   markupsafe=1.0 \
-  numpy=1.11.3 \
-  numpy-base=1.15.0 \
+  numpy=1.15.1 \
+  numpy-base=1.15.1 \
   olefile=0.46 \
   parso=0.5.0 \
   pickleshare=0.7.4 \
@@ -125,6 +125,7 @@ RUN pip install --upgrade \
   scipy==1.3.1 \
   xlrd==1.2.0 \
   requests==2.22.0 \
-  python-dotenv==0.10.3
+  python-dotenv==0.10.3 \
+  pytest==5.3.1
 
 WORKDIR /code
