@@ -20,8 +20,8 @@ RUN apt-get update --fix-missing && \
   rm -rf /var/lib/apt/lists/*
 
 # installing conda - Python/R Data Science Platform
-RUN time curl "https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh" -O && \
-  mv Anaconda3-5.3.0-Linux-x86_64.sh ~/anaconda.sh && \
+RUN time curl "https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh" -O && \
+  mv Anaconda3-5.3.1-Linux-x86_64.sh ~/anaconda.sh && \
   /bin/bash ~/anaconda.sh -b -p /opt/conda && \
   rm ~/anaconda.sh && \
   ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
