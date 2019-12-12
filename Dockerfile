@@ -83,7 +83,8 @@ RUN conda install -c rdkit -c conda-forge -f -y -n base \
   itsdangerous=0.24 \
   libpq=10.3 \
   markupsafe=1.0 \
-  numpy=1.15.1 \
+  numpy=1.11.3 \
+  numpy-base=1.11.3 \
   olefile=0.46 \
   parso=0.5.0 \
   pickleshare=0.7.4 \
